@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姜篱的自我介绍</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f8bbd0',
+                        secondary: '#e1bee7',
+                        accent: '#ce93d8',
+                        light: '#f3e5f5',
+                        dark: '#4a148c'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .bg-gradient-soft {
+                background: linear-gradient(135deg, #f8bbd0 0%, #e1bee7 100%);
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+            .animate-float-delay-1 {
+                animation: float 6s ease-in-out 1s infinite;
+            }
+            .animate-float-delay-2 {
+                animation: float 6s ease-in-out 2s infinite;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light min-h-screen flex flex-col">
+    <!-- 导航栏 -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-accent font-bold text-xl">姜篱的小天地</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-dark hover:text-accent transition-colors duration-300">关于我</a>
+                <a href="#game" class="text-dark hover:text-accent transition-colors duration-300">我的游戏</a>
+                <a href="#master" class="text-dark hover:text-accent transition-colors duration-300">我的师傅</a>
+                <a href="#contact" class="text-dark hover:text-accent transition-colors duration-300">联系方式</a>
+            </div>
+            <button class="md:hidden text-dark focus:outline-none" id="menu-toggle">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="md:hidden hidden bg-white shadow-lg absolute w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#about" class="text-dark hover:text-accent py-2 transition-colors duration-300">关于我</a>
+                <a href="#game" class="text-dark hover:text-accent py-2 transition-colors duration-300">我的游戏</a>
+                <a href="#master" class="text-dark hover:text-accent py-2 transition-colors duration-300">我的师傅</a>
+                <a href="#contact" class="text-dark hover:text-accent py-2 transition-colors duration-300">联系方式</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-soft opacity-80"></div>
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-10 left-10 w-20 h-20 rounded-full bg-primary/30 animate-float"></div>
+            <div class="absolute top-20 right-20 w-32 h-32 rounded-full bg-secondary/30 animate-float-delay-1"></div>
+            <div class="absolute bottom-10 left-1/3 w-28 h-28 rounded-full bg-accent/30 animate-float-delay-2"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <div class="inline-block p-4 bg-white/30 backdrop-blur-md rounded-full mb-6">
+                <img src="https://picsum.photos/id/64/200/200" alt="姜篱的头像" class="w-40 h-40 rounded-full border-4 border-white object-cover shadow-lg transform transition-transform duration-500 hover:scale-105">
+            </div>
+            <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white text-shadow mb-4">你好，我是<span class="text-dark">姜篱</span></h1>
+            <p class="text-[clamp(1.2rem,2vw,1.5rem)] text-white/90 max-w-2xl mx-auto mb-8">
+                一个热爱《燕云十六声》的女生，在游戏世界里不断探索与成长
+            </p>
+            <a href="#about" class="inline-block bg-white text-accent font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                了解更多 <i class="fa fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+        <div class="absolute bottom-0 w-full overflow-hidden leading-none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16 md:h-24">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="fill-white"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="fill-white"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="fill-white"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- 关于我部分 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-dark mb-4">关于我</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="absolute -top-6 -left-6 w-64 h-64 bg-primary/20 rounded-full z-0"></div>
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-secondary/20 rounded-full z-0"></div>
+                    <img src="https://picsum.photos/id/237/600/400" alt="姜篱的照片" class="relative z-10 w-full h-auto rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-[1.02]">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-accent mb-4">你好，我是姜篱</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        我是一个热爱游戏的女生，最喜欢的游戏是《燕云十六声》。我喜欢在游戏中探索各种未知的地方，结交志同道合的朋友。
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        游戏对我来说不仅是一种娱乐方式，更是一个充满无限可能的世界。在《燕云十六声》中，我可以体验到不同的角色和故事，感受游戏带来的乐趣和挑战。
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-light p-4 rounded-lg shadow-sm">
+                            <i class="fa fa-gamepad text-accent text-xl mb-2"></i>
+                            <h4 class="font-semibold mb-1">游戏爱好者</h4>
+                            <p class="text-sm text-gray-600">喜欢探索各种类型的游戏</p>
+                        </div>
+                        <div class="bg-light p-4 rounded-lg shadow-sm">
+                            <i class="fa fa-book text-accent text-xl mb-2"></i>
+                            <h4 class="font-semibold mb-1">学习中</h4>
+                            <p class="text-sm text-gray-600">不断提升自己的游戏技能</p>
+                        </div>
+                        <div class="bg-light p-4 rounded-lg shadow-sm">
+                            <i class="fa fa-users text-accent text-xl mb-2"></i>
+                            <h4 class="font-semibold mb-1">社交达人</h4>
+                            <p class="text-sm text-gray-600">喜欢在游戏中结交朋友</p>
+                        </div>
+                        <div class="bg-light p-4 rounded-lg shadow-sm">
+                            <i class="fa fa-music text-accent text-xl mb-2"></i>
+                            <h4 class="font-semibold mb-1">音乐爱好者</h4>
+                            <p class="text-sm text-gray-600">喜欢游戏中的背景音乐</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我的游戏部分 -->
+    <section id="game" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-dark mb-4">我的游戏</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">《燕云十六声》是我最喜欢的游戏，我在这里度过了许多美好的时光</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+                    <img src="https://picsum.photos/id/26/600/400" alt="燕云十六声游戏画面" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-dark mb-3">《燕云十六声》</h3>
+                        <p class="text-gray-600 mb-4">这是一款非常棒的武侠游戏，我喜欢它的画面风格和丰富的剧情。在游戏中，我可以体验到江湖的恩怨情仇，感受到武侠的魅力。</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fa fa-clock-o mr-2"></i> 已玩时长: 320小时
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+                    <img src="https://picsum.photos/id/110/600/400" alt="游戏角色" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-dark mb-3">我的角色</h3>
+                        <p class="text-gray-600 mb-4">我在游戏中创建了一个女性角色，她是一名剑客。我喜欢她的勇敢和坚韧，也喜欢她在游戏中的成长历程。</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fa fa-star mr-2"></i> 角色等级: 58级
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+                    <img src="https://picsum.photos/id/160/600/400" alt="游戏中的朋友" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-dark mb-3">游戏中的朋友</h3>
+                        <p class="text-gray-600 mb-4">在游戏中，我结识了许多志同道合的朋友。我们一起完成任务，探索世界，分享游戏中的喜怒哀乐。</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fa fa-users mr-2"></i> 好友数量: 42位
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-accent text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    查看我的游戏相册 <i class="fa fa-image ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我的师傅部分 -->
+    <section id="master" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-dark mb-4">我的师傅</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">感谢念少师傅的悉心教导，我从您身上学到了很多</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-light rounded-2xl shadow-lg p-8 relative">
+                    <div class="absolute -top-6 -left-6 text-6xl text-primary/20">"</div>
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="flex-shrink-0">
+                            <img src="https://picsum.photos/id/91/200/200" alt="念少师傅" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-dark mb-2">念少</h3>
+                            <p class="text-accent mb-4">我的师傅 & 游戏导师</p>
+                            <p class="text-gray-700 mb-4 leading-relaxed">
+                                念少师傅是我在《燕云十六声》中遇到的最厉害的玩家之一。他不仅游戏技术高超，而且非常乐于助人。在我刚开始玩这个游戏的时候，他给予了我很多帮助和指导。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                师傅教会了我如何更好地操作角色，如何应对各种挑战，以及如何在游戏中生存和发展。我非常尊敬他，也非常感谢他一直以来的帮助和支持。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 text-6xl text-primary/20">"</div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-primary/20">
+                        <div class="text-3xl text-primary mb-4">
+                            <i class="fa fa-lightbulb-o"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-dark mb-2">耐心教导</h4>
+                        <p class="text-gray-600">师傅总是耐心地解答我的问题，即使是很简单的问题也不会厌烦。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-primary/20">
+                        <div class="text-3xl text-primary mb-4">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-dark mb-2">保护与支持</h4>
+                        <p class="text-gray-600">在游戏中，师傅总是保护我，支持我，让我感到很安全。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-primary/20">
+                        <div class="text-3xl text-primary mb-4">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-dark mb-2">榜样力量</h4>
+                        <p class="text-gray-600">师傅的游戏技术和游戏态度一直是我学习的榜样。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="py-20 bg-gradient-soft">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-white mb-4">联系我</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+                <p class="text-white/80 max-w-2xl mx-auto mt-4">如果你也喜欢《燕云十六声》，或者想和我交流游戏心得，欢迎随时联系我</p>
+            </div>
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8 md:p-12 bg-light">
+                        <h3 class="text-2xl font-semibold text-dark mb-6">发送消息</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">你的名字</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300" placeholder="请输入你的名字">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">电子邮箱</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300" placeholder="请输入你的电子邮箱">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">消息内容</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300" placeholder="请输入你想对我说的话"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-white font-semibold py-3 px-6 rounded-lg shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                                发送消息 <i class="fa fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="p-8 md:p-12 bg-white flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-dark mb-6">联系方式</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-light p-3 rounded-full mr-4">
+                                        <i class="fa fa-envelope text-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark mb-1">电子邮箱</h4>
+                                        <p class="text-gray-600">jiangli@example.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-light p-3 rounded-full mr-4">
+                                        <i class="fa fa-gamepad text-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark mb-1">游戏ID</h4>
+                                        <p class="text-gray-600">姜篱</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-light p-3 rounded-full mr-4">
+                                        <i class="fa fa-weixin text-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark mb-1">微信</h4>
+                                        <p class="text-gray-600">jiangli_001</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-dark mb-4">关注我的社交媒体</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-light hover:bg-primary/20 w-10 h-10 rounded-full flex items-center justify-center text-accent transition-colors duration-300">
+                                    <i class="fa fa-weibo"></i>
+                                </a>
+                                <a href="#" class="bg-light hover:bg-primary/20 w-10 h-10 rounded-full flex items-center justify-center text-accent transition-colors duration-300">
+                                    <i class="fa fa-weixin"></i>
+                                </a>
+                                <a href="#" class="bg-light hover:bg-primary/20 w-10 h-10 rounded-full flex items-center justify-center text-accent transition-colors duration-300">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-light hover:bg-primary/20 w-10 h-10 rounded-full flex items-center justify-center text-accent transition-colors duration-300">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">姜篱的小天地</h4>
+                    <p class="text-white/70 mb-4">一个热爱《燕云十六声》的女生的个人主页</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white/70 hover:text-white transition-colors duration-300">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="text-white/70 hover:text-white transition-colors duration-300">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="text-white/70 hover:text-white transition-colors duration-300">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white/70 hover:text-white transition-colors duration-300">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-white/70 hover:text-white transition-colors duration-300">关于我</a></li>
+                        <li><a href="#game" class="text-white/70 hover:text-white transition-colors duration-300">我的游戏</a></li>
+                        <li><a href="#master" class="text-white/70 hover:text-white transition-colors duration-300">我的师傅</a></li>
+                        <li><a href="#contact" class="text-white/70 hover:text-white transition-colors duration-300">联系我</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">我的游戏</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors duration-300">燕云十六声</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors duration-300">游戏攻略</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors duration-300">游戏心得</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors duration-300">游戏相册</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">联系方式</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2 text-white/70"></i>
+                            <span class="text-white/70">jiangli@example.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-weixin mr-2 text-white/70"></i>
+                            <span class="text-white/70">jiangli_001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2 text-white/70"></i>
+                            <span class="text-white/70">123-4567-8910</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/50 text-sm">
+                <p>&copy; 2025 姜篱的小天地. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform transition-all duration-300 translate-y-20 opacity-0 hover:bg-dark">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                navbar.classList.add('py-2', 'shadow-md');
+                navbar.classList.remove('py-3');
+                backToTop.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                navbar.classList.add('py-3');
+                navbar.classList.remove('py-2', 'shadow-md');
+                backToTop.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+        
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动端菜单
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // 回到顶部按钮
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+    
