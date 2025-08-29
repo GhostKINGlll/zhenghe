@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致子屹 - 佳豪的心意</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E94560',
+                        secondary: '#1A1A2E',
+                        accent: '#FFD700',
+                        light: '#F7F7F9',
+                        dark: '#16213E'
+                    },
+                    fontFamily: {
+                        serif: ['Garamond', 'Georgia', 'serif'],
+                        sans: ['Montserrat', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+            .text-shadow-sm {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+            .animate-fade-in {
+                animation: fadeIn 1.5s ease forwards;
+            }
+            .animate-slide-up {
+                animation: slideUp 1s ease forwards;
+            }
+            .animate-heartbeat {
+                animation: heartbeat 1.5s ease-in-out infinite;
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.1); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.1); }
+            70% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-secondary to-dark text-light min-h-screen font-sans overflow-x-hidden">
+<!-- 装饰性元素 -->
+<div class="fixed inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-1/4 left-10 w-16 h-16 rounded-full bg-primary/20 animate-float" style="animation-delay: 0s;"></div>
+    <div class="absolute top-1/2 right-20 w-20 h-20 rounded-full bg-accent/20 animate-float" style="animation-delay: 1s;"></div>
+    <div class="absolute bottom-1/4 left-1/3 w-12 h-12 rounded-full bg-primary/30 animate-float" style="animation-delay: 2s;"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-14 h-14 rounded-full bg-accent/30 animate-float" style="animation-delay: 3s;"></div>
+</div>
+
+<!-- 主容器 -->
+<div class="container mx-auto px-4 py-12 max-w-3xl relative z-10">
+    <!-- 信封打开动画容器 -->
+    <div id="envelope" class="relative mx-auto w-full max-w-md mb-16 cursor-pointer">
+        <div class="envelope-front bg-white/10 backdrop-blur-sm rounded-t-lg p-8 shadow-xl border border-white/20 transition-all duration-700">
+            <div class="text-center">
+                <h2 class="text-2xl md:text-3xl font-serif text-accent animate-fade-in">致 子屹</h2>
+                <p class="text-light/70 mt-2 animate-fade-in" style="animation-delay: 0.3s;">雷佳豪 寄</p>
+            </div>
+            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-8 bg-primary/80 rounded-b-md transition-all duration-500 z-10"></div>
+        </div>
+        <div class="envelope-backdrop absolute inset-0 bg-white/5 backdrop-blur-sm rounded-lg shadow-2xl border border-white/10 -rotate-3 transition-all duration-700"></div>
+    </div>
+
+    <!-- 信纸内容 -->
+    <div id="letter" class="bg-light/10 backdrop-blur-md rounded-lg p-8 md:p-12 shadow-2xl border border-white/10 transform translate-y-10 opacity-0 transition-all duration-1000">
+        <!-- 信的标题 -->
+        <div class="text-center mb-10 opacity-0" style="animation: fadeIn 1s ease forwards 0.5s; animation-fill-mode: forwards;">
+            <h1 class="text-3xl md:text-4xl font-serif text-accent text-shadow-sm">给我藏了很久的喜欢</h1>
+            <div class="w-24 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- 信的内容 -->
+        <div class="space-y-6 text-lg leading-relaxed">
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 0.8s;">亲爱的子屹：</p>
+
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 1.1s;">
+                当你看到这些文字的时候，我已经鼓起了这辈子最大的勇气。有些话，我藏了太久太久，久到从我们还是穿着校服、背着书包的小学生时，就悄悄在心里扎了根。
+            </p>
+
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 1.4s;">
+                还记得小学教室窗外的阳光吗？总觉得那时候的阳光特别暖，可能是因为每次不经意转头，都能看到你认真听讲的样子。那时候的我，还不懂什么是喜欢，只知道看到你笑，一整天的心情都会变得很好。
+            </p>
+
+            <div class="flex justify-center my-6 opacity-0" style="animation: fadeIn 1.5s ease forwards 1.7s;">
+                <div class="relative w-64 h-48">
+                    <img src="https://picsum.photos/id/1059/400/300" alt="阳光下的教室，回忆中的场景" class="w-full h-full object-cover rounded-lg shadow-lg border border-white/20">
+                    <div class="absolute inset-0 bg-dark/30 rounded-lg"></div>
+                </div>
+            </div>
+
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 2s;">
+                后来，我们毕业了，像很多故事里那样，各自走向了不同的人生轨迹。我偶尔还是会想起你，但只能把这份想念藏在心底。我以为，我们的交集可能就停留在那段无忧无虑的时光里了。
+            </p>
+
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 2.3s;">
+                直到那天，在《光遇》的世界里，当我看到那个熟悉又陌生的名字，听到你的声音时，我愣住了。原来，缘分真的很奇妙，它会跨越时间和距离，用一种意想不到的方式，让两个渐行渐远的人重新靠近。
+            </p>
+
+            <div class="flex justify-center my-6 opacity-0" style="animation: fadeIn 1.5s ease forwards 2.6s;">
+                <div class="relative w-64 h-48">
+                    <img src="https://picsum.photos/id/151/400/300" alt="光遇游戏场景，象征两人的重逢" class="w-full h-full object-cover rounded-lg shadow-lg border border-white/20">
+                    <div class="absolute inset-0 bg-dark/30 rounded-lg"></div>
+                </div>
+            </div>
+
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 2.9s;">
+                和你在光遇里一起奔跑、飞翔、看风景的日子，让我找回了久违的快乐。每次点亮你的时候，就像点亮了我心里的光。我开始明白，那份从小学就埋下的种子，其实一直都在悄悄生长。
+            </p>
+
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 3.2s;">
+                子屹，这么多年过去了，我喜欢你这件事，从来没有改变过。从懵懂的少年到现在，你一直是我心里特别的存在。
+            </p>
+
+            <div class="text-center my-8 opacity-0" style="animation: fadeIn 1.5s ease forwards 3.5s;">
+                    <span class="inline-block text-primary text-2xl animate-heartbeat">
+                        <i class="fa fa-heart"></i>
+                    </span>
+            </div>
+
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 3.8s;">
+                我不知道这份迟来的告白会不会让你惊讶，也不知道你是否会接受。但我不想再错过，不想再把这份感情藏下去。
+            </p>
+
+            <p class="opacity-0" style="animation: slideUp 1s ease forwards 4.1s;">
+                冯子屹，我喜欢你。你愿意……给我一个机会，让我们从光遇的虚拟世界，走到真实的生活里，一起创造更多属于我们的回忆吗？
+            </p>
+
+            <p class="opacity-0 text-right mt-10 font-serif text-xl" style="animation: slideUp 1s ease forwards 4.4s;">
+                一直喜欢你的<br>
+                雷佳豪
+            </p>
+        </div>
+
+        <!-- 互动按钮 -->
+        <div class="mt-12 flex justify-center gap-6 opacity-0" style="animation: fadeIn 1.5s ease forwards 4.7s;">
+            <button id="acceptBtn" class="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50">
+                <i class="fa fa-heart mr-2"></i>我愿意
+            </button>
+            <button id="thinkBtn" class="px-8 py-3 bg-white/10 hover:bg-white/20 text-light rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/30">
+                <i class="fa fa-clock-o mr-2"></i>让我想想
+            </button>
+        </div>
+
+        <!-- 隐藏的回复 -->
+        <div id="acceptMessage" class="mt-10 text-center hidden">
+            <div class="text-4xl text-accent mb-4 animate-heartbeat">
+                <i class="fa fa-heart"></i>
+            </div>
+            <h3 class="text-2xl mb-4">谢谢你，子屹！</h3>
+            <p class="text-lg">我会用一辈子来珍惜这份缘分，爱你。</p>
+        </div>
+
+        <div id="thinkMessage" class="mt-10 text-center hidden">
+            <div class="text-4xl text-accent mb-4">
+                <i class="fa fa-star"></i>
+            </div>
+            <h3 class="text-2xl mb-4">没关系</h3>
+            <p class="text-lg">无论多久，我都会等你的答案。</p>
+        </div>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<footer class="mt-20 py-6 text-center text-light/50 text-sm relative z-10">
+    <p>用时光写成的信 &copy; 2023</p>
+</footer>
+
+<script>
+    // 信封打开效果
+    document.getElementById('envelope').addEventListener('click', function() {
+        const front = document.querySelector('.envelope-front');
+        const backdrop = document.querySelector('.envelope-backdrop');
+        const letter = document.getElementById('letter');
+
+        front.style.transform = 'rotateX(-180deg)';
+        front.style.opacity = '0';
+        backdrop.style.transform = 'rotate-0 scale(1.05)';
+
+        // 延迟显示信纸
+        setTimeout(() => {
+            letter.style.transform = 'translateY(0)';
+            letter.style.opacity = '1';
+        }, 600);
+    });
+
+    // 按钮交互
+    document.getElementById('acceptBtn').addEventListener('click', function() {
+        document.getElementById('acceptMessage').classList.remove('hidden');
+        document.getElementById('acceptMessage').classList.add('animate-fade-in');
+        document.querySelector('.flex.justify-center.gap-6').style.display = 'none';
+    });
+
+    document.getElementById('thinkBtn').addEventListener('click', function() {
+        document.getElementById('thinkMessage').classList.remove('hidden');
+        document.getElementById('thinkMessage').classList.add('animate-fade-in');
+        document.querySelector('.flex.justify-center.gap-6').style.display = 'none';
+    });
+
+    // 页面加载完成后，允许自动打开信封（可选）
+    // setTimeout(() => {
+    //     document.getElementById('envelope').click();
+    // }, 2000);
+</script>
+</body>
+</html>
